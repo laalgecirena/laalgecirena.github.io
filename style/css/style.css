@@ -1,10 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/milestone-free-version');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Nunito', sans-serif; */
-    font-family: 'Milestone Free Version', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: normal;
     text-decoration: none;
     text-align: center;
@@ -136,7 +135,7 @@ h1 img {
         height: 27vw;
     }
     h1{
-        font-size: 15vw;
+        font-size: 13vw;
         padding: 0;
         padding-top: 1rem;
     }
