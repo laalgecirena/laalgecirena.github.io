@@ -1,0 +1,170 @@
+/*
+#19181A Negro
+#479761 Verde
+#A16E83 Rojo claro
+#B19F9E Rosa claro
+#CEBC81 Marron claro
+
+font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+:root {
+    --main-bg-color: #19181A;
+    --first-color: #479761;
+    --second-color: #A16E83;
+    --third-color: #B19F9E;
+    --fourth-color: #CEBC81;
+    --title-size: 2.3rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.8rem;
+    min-width: 280px;
+}
+main {
+    background-color: #fff;
+    color: #000;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.dark {
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+.fix {
+    color: var(--main-bg-color);
+}
+.hidden {
+    display: none;
+}
+#swich {
+    display: inline-block;
+    line-height: .5;
+}
+h1, h2 {
+    padding: 1rem;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 2.5rem;
+}
+ul {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+li {
+    color: #fff;
+}
+li a {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+li:first-child {
+    letter-spacing: 1.5rem;
+}
+ul > a {
+    display: block;
+}
+.fab, .fa-brands, .fa-solid {
+ color: white;
+ font-size: 10vw;
+}
+.fa-instagram {
+    /* color: #C13584; */
+
+    background: linear-gradient(-150deg,#405DE6,#833AB4,#C13584,#FCAF45);
+    background-size: 200% auto;
+
+    color: #000;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-square-facebook {
+    color: #3b5998;
+}
+.fa-telegram-plane {
+    color: #229ED9;
+}
+.fa-whatsapp {
+    color: #25D366;
+}
+.fa-google {
+    /* color: #4285F4; */
+    background: linear-gradient(#DB4437,#F4B400,#0F9D58,#4285F4);
+    background-size: 100% auto;
+
+    color: #000;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-globe {
+    color: #000;
+}
+footer a:active {
+    color: var(--second-color);
+    font-weight: 900;
+}
+h1 img {
+    width: 2.5rem;
+}
+
+.grid a {
+    color: inherit;
+}
+@media (max-width: 1000px) {
+    ul {
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .fab, .fa-brands, .fa-solid {
+        font-size:20vw;
+    }
+}
+@media (max-width: 500px) {
+    main {
+        grid-template-rows: 1fr 6fr;
+    }
+    ul {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .fab, .fa-brands, .fa-solid {
+        font-size: 25vw;
+    }
+    h1{
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 6.5vw;
+    }
+    h1 img {
+        width: 5vw;
+    }
+}
